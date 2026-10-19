@@ -1,0 +1,19 @@
+# 本地编译产物
+handler
+function.zip
+bin
+
+# IDE / 编辑器配置
+.vscode
+.idea
+.codeartsdoer
+
+# Terraform 本地状态与变量文件
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+*.auto.tfvars
+
+# 本地事件变量
+env-vars.json

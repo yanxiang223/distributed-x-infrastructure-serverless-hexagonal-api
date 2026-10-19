@@ -1,0 +1,28 @@
+# 复制为 terraform.tfvars 后填入实际取值。
+# terraform.tfvars 已在 .gitignore 中屏蔽，切勿提交到版本库。
+
+region      = "cn-north-4"
+project_name = "products-api"
+
+# 访问密钥：也可改用 TF_VAR_access_key / TF_VAR_secret_key 环境变量传入
+access_key = "your-access-key-id"
+secret_key = "your-secret-access-key"
+
+# 项目 ID，可在华为云『我的凭证』页面查询
+project_id = "your-project-id"
+
+# 兼容接口实例的管理员密码（同时作为数据面签名密钥）
+geminidb_password = "your-instance-password"
+
+# 对象存储桶名需全局唯一，留空则按项目名与区域自动拼装
+obs_bucket_name = ""
+
+# 是否把函数日志绑定到本模板创建的日志组与日志流。
+# 保持默认 true 可让函数调用日志统一落到带保留策略的自建日志组；
+# 若账号下函数工作流拒绝绑定自定义日志组（创建函数返回 FSS.1212），
+# 改为 false 即回退到函数工作流自动配置的日志组，日志能力不受影响。
+bind_function_log_group = true
+
+# 网关专享实例所在可用区，须与目标区域实际可售资源匹配。
+# 若创建时返回 APIC.9219（可用区资源不足），可改为该区域其它可用区。
+apig_available_zones = ["cn-north-4a"]

@@ -1,0 +1,24 @@
+{
+  "isBase64Encoded": false,
+  "httpMethod": "PUT",
+  "path": "/1",
+  "body": "{\"id\":\"1\", \"name\":\"product\", \"price\": 0.123}",
+  "pathParameters": {
+    "id": "1"
+  },
+  "queryStringParameters": {},
+  "headers": {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+    "Host": "your-apig-instance.apic.cn-north-4.myhuaweicloud.com",
+    "User-Agent": "curl/8.4.0",
+    "X-Forwarded-For": "127.0.0.1",
+    "X-Forwarded-Proto": "https"
+  },
+  "requestContext": {
+    "apiId": "0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e",
+    "requestId": "c6af9ac6-7b61-11e6-9a41-93e8deadbeef",
+    "stage": "RELEASE",
+    "sourceIp": "127.0.0.1"
+  }
+}
